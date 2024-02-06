@@ -18,14 +18,14 @@ func readbyte(r io.Reader) (rune, error) {
 
 func main() {
 
-    // For å generee profiler; kun en aktivert av gangen
+    // Generering av profiler; kun en aktivert av gangen
     defer profile.Start(profile.CPUProfile, profile.ProfilePath(".")).Stop()
     //defer profile.Start(profile.MemProfile, profile.ProfilePath(".")).Stop()
     //defer profile.Start(profile.MemProfile, profile.MemProfileRate(1), profile.ProfilePath(".")).Stop()
 
     f, err := os.Open(os.Args[1])
     if err != nil {
-        log.Fatalf("Kunne ikke åpne filen %q: %v", os.Args[1], err)
+        log.Fatalf("Kunne ikke aapne filen %q: %v", os.Args[1], err)
     }
    
     words := 0  
