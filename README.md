@@ -1,2 +1,2 @@
 # pprof
-pprof for sem I is-105 våren 2024 uia
+pprof for SEM I is-105 våren 2024 uia
